@@ -2,7 +2,7 @@ import React from 'react'
 import Nav from './nav'
 import Header from './header'
  function App(){
-  var admin=true
+  var admin=false
   var content 
   if(admin){
       content= <Nav/>
@@ -12,9 +12,8 @@ import Header from './header'
     }
   return(
     <div>
-     <Nav></Nav>
-     <Header></Header>
+     <h1>{content}</h1>
     </div>
   )
  }
- export default App
+ export default App 
